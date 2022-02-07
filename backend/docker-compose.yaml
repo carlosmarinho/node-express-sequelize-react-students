@@ -1,0 +1,42 @@
+version: '3.7'
+services:
+  mysqldb:
+    image: 'mysql'
+    command: --init-file /data/application/init.sql
+    volumes:
+    restart: unless-stopped
+    environment:
+      - MYSQL_ROOT_PASSWORD=123456
+      - MYSQL_DATABASE=database_development
+    ports:
+      - 3306:3306
+    volumes:
+      - ./config/init.sql:/data/application/init.sql
+      - db:/var/lib/mysql
+    healthcheck:
+            test: ["CMD", "mysqladmin" ,"ping", "-h", "localhost"]
+            timeout: 20s
+            retries: 10
+    
+  app:
+    depends_on:
+      - mysqldb
+    restart: on-failure
+    build:
+      context: ./
+      target: dev
+    volumes:
+      - .:/app
+    ports:
+      - "5000:5000"
+    # command: npm run db:migrate
+    # command: npm run db:seed
+    # command: npx sequelize-cli db:migrate
+    command: npm run start:dev
+
+    environment:
+      NODE_ENV: development
+      
+volumes: 
+  db:
+
