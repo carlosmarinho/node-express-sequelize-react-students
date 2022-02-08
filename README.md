@@ -9,7 +9,7 @@ Run the following commands
 
 When you finished the cloning process you be able to access 2 folders backend and frontend, that should be installed apart. You can follow this readme file or inside of each directory there's a readme with its instructions
 
-## Installing the Backend
+# Installing the Backend
 
  - Get into the backend folder
     ```
@@ -99,7 +99,7 @@ I generate the migrations and seeds of the application that is located in the fo
 
   - Should change the docker-compose.yaml to work with envs, so we can handle all necessary environments.
 
-## Installation the Frontend
+# Installation the Frontend
 
 Run the following commands
 
