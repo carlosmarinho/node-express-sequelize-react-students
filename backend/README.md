@@ -2,14 +2,14 @@
 
 Run the following commands
 
- - Unzip the file optimhire.zip
+ - Clone the application from https://github.com/carlosmarinho/node-express-sequelize-react-students
     ```
-    unzip -r optimhire.zip
+    git clone https://github.com/carlosmarinho/node-express-sequelize-react-students.git
     ```
 
  - Get into the discompacted backend folder
     ```
-    cd optimhire/backend
+    cd backend
     ```
 
  - First we need to npm install to have the sequelize-cli installed to letter run the migrations and the seed
