@@ -6,6 +6,7 @@ exports.fetchAllScores = async (req, res, next) => {
 };
 
 exports.saveScore = async (req, res, next) => {
+  console.log("\n\n***\n body: ", req.body, "\n***\n");
   const updated = await scoreService.saveScore(req.params.id, req.body);
   if (updated) res.json({ message: "Score updated successfully!" }).status(200);
 
