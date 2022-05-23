@@ -106,7 +106,7 @@ Run the following commands
 
  - Get into the discompacted backend folder
     ```
-    cd backend
+    cd frontend
     ```
 
  - Run npm install to install the package dependancy
