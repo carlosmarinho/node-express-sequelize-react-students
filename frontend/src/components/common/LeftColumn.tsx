@@ -25,7 +25,9 @@ const LeftColumn = () => {
     <LeftColumnWrapper>
       <LastStudents />
       <Separator />
-      <h3>Average Score: {averageScore().toFixed(2)}</h3>
+      {studentsCurrentScore.length > 0   && (
+        <h3>Average Score: {averageScore().toFixed(2)}</h3>
+      )}
     </LeftColumnWrapper>
   );
 };
