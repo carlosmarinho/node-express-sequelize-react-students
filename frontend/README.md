@@ -2,42 +2,46 @@
 
 Run the following commands
 
- - Clone the application from https://github.com/carlosmarinho/node-express-sequelize-react-students
-    ```
-    git clone https://github.com/carlosmarinho/node-express-sequelize-react-students.git
-    ```
+- Clone the application from https://github.com/carlosmarinho/node-express-sequelize-react-students
 
- - Get into the discompacted backend folder
-    ```
-    cd backend
-    ```
+  ```
+  git clone https://github.com/carlosmarinho/node-express-sequelize-react-students.git
+  ```
 
- - Run npm install to install the package dependancy
-    ```
-    npm install
-    ```
+- Get into the discompacted backend folder
 
- - Run npm run start to start the application
-    ```
-    npm run start
-    ```
+  ```
+  cd frontend
+  ```
+
+- Run npm install to install the package dependancy
+
+  ```
+  npm install
+  ```
+
+- Run npm run start to start the application
+  ```
+  npm run start
+  ```
 
 The last command (npm run servers) will run the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 # Tecnologies used
 
- - React
- - Hooks
- - Redux
- - Redux Thunk
- - CSS in JS (Styled Components)
- - Jest
- - React Testing Library
+- React
+- Hooks
+- Redux
+- Redux Thunk
+- CSS in JS (Styled Components)
+- Jest
+- React Testing Library
 
 # About the application
 
 ## Development
+
 I started developing the application and decided to use redux, styled components and a bit of TDD with React Testing Library and Jest, but i stopped and finished the application with a lot of testing missing.
 
 I decided to use all those thechnology, then you could have a good idea how can i develop a real application.
@@ -69,7 +73,7 @@ I decided to use all those thechnology, then you could have a good idea how can 
 
 ## Testing
 
-  - I started developing the application using TDD, but as it wasn't required and i want to speed things up, i stoped and there is a necessity to do some more testing.
-  - It will be created a folter test in the current dir of the component.
-      - In this version we just have test on the folder /src/components/Students
-  - To run the test run  `npm run test`
+- I started developing the application using TDD, but as it wasn't required and i want to speed things up, i stoped and there is a necessity to do some more testing.
+- It will be created a folter test in the current dir of the component.
+  - In this version we just have test on the folder /src/components/Students
+- To run the test run `npm run test`
